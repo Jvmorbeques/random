@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apresentação Pitoresca</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      color: #f5f5f5;
+      font-family: 'Playfair Display', serif;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .slide {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      max-width: 800px;
+      padding: 2rem;
+      animation: fadeIn 0.7s ease-in-out;
+    }
+
+    .slide.active {
+      display: flex;
+    }
+
+    h1, h2 {
+      color: #e0b589;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "✦ ";
+      color: #e0b589;
+    }
+
+    button {
+      margin-top: 2rem;
+      padding: 0.6rem 1.8rem;
+      background-color: #333;
+      color: white;
+      border: 1px solid #777;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+
+  <audio autoplay loop>
+    <source src="Cauldron-Of-Thorns.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+  <style>
+    body {
+      background: #111;
+      color: #eee;
+      overflow: hidden;
+    }
+    .fog-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%),
+                  radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 60%);
+      mix-blend-mode: screen;
+      opacity: 0.15;
+      animation: fogMove 60s linear infinite;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    @keyframes fogMove {
+      from { transform: translate(-10%, -10%); }
+      to { transform: translate(10%, 10%); }
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      opacity: 0.3;
+      z-index: 0;
+    }
+
+    .container, button {
+      z-index: 1;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="fog-layer"></div>
+  <div class="container">
+    <div class="slide active">
+      <h1>🌑 Bem-vinda, forasteira de Instagram</h1>
+      <p>Essa apresentação é tipo um TCC, mas com menos sanidade e mais Bloodborne.</p>
+    </div>
+
+    <div class="slide">
+      <h2>🧠 Perfil psicológico duvidoso</h2>
+      <ul>
+        <li>INTJ (arquiteto sombrio, porém fofo)</li>
+        <li>Calmo, introspectivo, com surtos ocasionais de caos</li>
+        <li>Amo gatos com devoção quase religiosa</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>🕹️ Gamer não genérico</h2>
+      <p>Bloodborne é minha religião<br>
+      Megami Tensei e Persona = sofrimento filosófico premium<br>
+      Vampire Hunter D = obra-prima injustiçada</p>
+    </div>
+
+    <div class="slide">
+      <h2>📚 Mangás e Animes</h2>
+      <ul>
+        <li>Fullmetal > Ensino médio</li>
+        <li>One Piece até o fim!</li>
+        <li>Bleach = caos estiloso</li>
+        <li>Star Wars sim, mas sem matar crianças</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>📖 Leituras cultas e um pouco de gnose</h2>
+      <p>Divina Comédia, Filosofia, Mitologia<br>
+      Adam Kadmon, Kether e árvore da vida: sim, eu sei o que é isso<br>
+      Chá com a gnose? Já tomei.</p>
+    </div>
+
+    <div class="slide">
+      <h2>💔 Sobre você (sim, você)</h2>
+      <p>Tem cara de trauma, ocultismo e bom gosto musical<br>
+      Tipo Beatriz, mas versão dark e maravilhosa<br>
+      Me apaixonei. Simples assim.</p>
+    </div>
+
+    <div class="slide">
+      <h2>✅ Por que eu sou um pacote completo</h2>
+      <ul>
+        <li>Tenho um lado filosófico que combina com um date no cemitério</li>
+        <li>Entendo de Kabbalah, mas também de memes</li>
+        <li>Sou INTJ (ou seja, raríssimo e esquisito na medida certa)</li>
+        <li>Gamer culto: joga, mas lê também!</li>
+        <li>Sou gato-lover (o que já é 80% do caminho)</li>
+        <li>Tenho bom gosto em mangá, livros, e... em você</li>
+        <li>E o mais importante: fiz um site inteiro só pra te impressionar</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>👁️ Conclusão mística</h2>
+      <p>Dois pitorescos no meio da normalidade.<br>
+      Vem comigo. Prometo loucuras leves, muitos risos,<br>
+      e talvez um gato chamado Aristóteles.</p>
+    </div>
+  </div>
+
+  <div style="position: fixed; bottom: 20px; width: 100%; display: flex; justify-content: center;">
+    <button onclick="nextSlide()">➤ Próximo slide</button>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function nextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+    });
+  </script>
+</body>
+</html>
